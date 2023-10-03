@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       fetch(`https://api.zipaddress.net/?zipcode=${zipcode}`)
           .then((response) => response.json())
           .then((data) => {
-              if (data.code === 200) {
+              if (data.code === 200) { // 基本status は 200
                   const address = data.data.fullAddress;
                   addressResult.textContent = `住所: ${address}`;
-              } else {
+              } else { // エラー時には status 400(入力エラー) または 500(API内部で発生したエラー)
                   addressResult.textContent = "郵便番号が見つかりません。";
               }
           })
