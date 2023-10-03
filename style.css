@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+#zipcode-form {
+  margin: 20px auto;
+}
+
+label {
+  font-weight: bold;
+}
+
+#zipcode {
+  width: 150px;
+  padding: 5px;
+}
+
+#search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+#result-container {
+  margin: 20px auto;
+}
+
+#address-result {
+  font-weight: bold;
+}
